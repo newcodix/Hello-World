@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+ <html>
+
+     <head>
+
+    <head/>
+
+
+    <body>
+<script>
+
+document.write("Hallo,t");
+var num1 = 3;
+var num2 = 5;
+var total = num1 * num2;
+document.write(total);
+</script>
+    </body>
+
+</html>
