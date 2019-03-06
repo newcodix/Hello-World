@@ -1,0 +1,57 @@
+{
+    // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
+    // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
+    // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch todolist.html",
+            "file": "${workspaceFolder}/todolist.html"
+        },
+       
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach",
+            "port": 9229
+        },
+       
+
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch add-on",
+            "addonType": "webExtension",
+            "addonPath": "${workspaceFolder}"
+        },
+        
+        {
+            "name": "Launch localhost",
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "url": "http://localhost/index.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Attach",
+            "type": "firefox",
+            "request": "attach"
+        },
+        {
+            "name": "Launch addon",
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "addonType": "webExtension",
+            "addonPath": "${workspaceFolder}"
+        }
+        
+        
+    ]
+}
