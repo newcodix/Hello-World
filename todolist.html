@@ -1,19 +1,30 @@
-// @ts-check
+<!DOCTYPE html>
 
 <html>
 
 <head>
 
-    <meta charset="utf-&" />
+    <meta charset = "utf-8"/>
 </head>
 
 
 <body>
-    <script>
+    <h1>Einkaufsliste</h1>
+    <button onclick="AddnewItem()">Neuen Eintrag hinzufügen</button> 
+    <ul id="list"></ul>
+    <script> 
 
-        document.write("HalloWelt");
-        document.write("test2");
-    </script
+    function AddnewItem(){
+        let item = prompt ("Was möchstest du hinzufügen?")
+        document.getElementById("list").innerHTML = item;
+
+    }
+
+
+
+
+    </script>
+
     </body>
 
 </html>
