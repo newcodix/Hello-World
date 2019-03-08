@@ -1,0 +1,13 @@
+<p id="conf">Bestätigen</p>
+…
+<script>                                 
+let txt; // Javascript Variable
+document.getElementById("conf").onclick = function () {
+    let result = confirm ('Bitte bestätigen oder canceln');
+    if (result === true) {
+        txt = "Wurde bestätigt";
+    } else {
+        txt = "Wurde abgelehnt";
+    }
+}
+</script>
