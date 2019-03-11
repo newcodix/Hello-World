@@ -5,6 +5,22 @@
     "version": "0.2.0",
     "configurations": [
         
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch javalern.html",
+            "file": "${workspaceFolder}/javalern.html"
+        },
+        
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch index.html",
+            "file": "${workspaceFolder}/index.html"
+        },
+            
         
         {
             "type": "firefox",
