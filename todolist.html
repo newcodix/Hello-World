@@ -12,14 +12,20 @@
     <h4>Einkaufsliste</h4>
     <button onclick="fügeneuenausdruckzu()">Neuen Eintrag hinzufügen</button> 
     <ul id="list"></ul>
-    <ul id="list1"></ul>
-
+    
     <script> 
+
+    let shoppingItem = ["A", "B", "Bla", "next"];
+    for (let index = 0; index < shoppingItem.length; index += 1) {
+        document.write(index);
+    }
+
+    //document.getElementById("list").innerText = shoppingItem[2];
 
     function fügeneuenausdruckzu(){
         let item = prompt ("Was möchstest du hinzufügen?")
         document.getElementById("list").innerText = item;
-        document.getElementById("list1").innerText = item;
+        
     }
 
 
