@@ -6,7 +6,7 @@
     "configurations": [
         
         {
-            "type": "firefox",
+            "type": "chrome",
             "request": "launch",
             "reAttach": true,
             "name": "Launch javalern.html",
@@ -14,7 +14,7 @@
         },
         
         {
-            "type": "firefox",
+            "type": "chrome",
             "request": "launch",
             "reAttach": true,
             "name": "Launch index.html",
@@ -23,7 +23,7 @@
             
         
         {
-            "type": "firefox",
+            "type": "chrome",
             "request": "launch",
             "reAttach": true,
             "name": "Launch javascriptneu.html",
@@ -32,7 +32,7 @@
 
         
         {
-            "type": "firefox",
+            "type": "chrome",
             "request": "launch",
             "reAttach": true,
             "name": "Launch auswahl.html",
@@ -40,7 +40,7 @@
         },
         
         {
-            "type": "firefox",
+            "type": "chrome",
             "request": "launch",
             "reAttach": true,
             "name": "Launch todolist.html",

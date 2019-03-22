@@ -12,10 +12,12 @@
     <h4>Einkaufsliste</h4>
     <button onclick="fügeneuenausdruckzu()">Neuen Eintrag hinzufügen</button> 
     <ul id="list"</ul>
+        
+        
     
     <script> 
 
-    let shoppingItem = ["A", "B", "Bla", "next", "Eier"];
+    let shoppingItem = ['Bier','Wein','Schnapps','Milch',]
     for (let index = 0; index < shoppingItem.length; index += 1) {
         document.getElementById('list').innerHTML += '<li>' + shoppingItem[index] + '</li>';
 
