@@ -16,7 +16,7 @@
         } else {
         txt = "Wurde abgelehnt";
         }
-     document.write(txt);
+        document.write(txt)
     }
     
     </script>

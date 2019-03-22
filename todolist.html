@@ -12,11 +12,13 @@
     <h1>Einkaufsliste</h1>
     <button onclick="AddnewItem()">Neuen Eintrag hinzufügen</button> 
     <ul id="list"></ul>
+    <ul id="nextlist"> </ul>
     <script> 
 
     function AddnewItem(){
         let item = prompt ("Was möchstest du hinzufügen?")
         document.getElementById("list").innerHTML = item;
+        document.getElementById("nextlist").innerHTML = item + 1;
 
     }
 
