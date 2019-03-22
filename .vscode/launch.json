@@ -13,9 +13,25 @@
             "file": "${workspaceFolder}/index.html"
         },
         
+        {
+            "type": "chrome",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch javalern.html",
+            "file": "${workspaceFolder}/javalern.html"
+        },
         
         {
-            "type": "firefox",
+            "type": "chrome",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch index.html",
+            "file": "${workspaceFolder}/index.html"
+        },
+            
+        
+        {
+            "type": "chrome",
             "request": "launch",
             "reAttach": true,
             "name": "Launch javascriptneu.html",
@@ -24,7 +40,7 @@
 
         
         {
-            "type": "firefox",
+            "type": "chrome",
             "request": "launch",
             "reAttach": true,
             "name": "Launch auswahl.html",
@@ -32,7 +48,7 @@
         },
         
         {
-            "type": "firefox",
+            "type": "chrome",
             "request": "launch",
             "reAttach": true,
             "name": "Launch todolist.html",
