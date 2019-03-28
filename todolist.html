@@ -10,28 +10,35 @@
 
 <body>
     <h4>Einkaufsliste</h4>
-    <button onclick="fügeneuenausdruckzu()">Neuen Eintrag hinzufügen</button> 
+    <button onclick="fügeneuenausdruckzu();updatelist();">Neuen Eintrag hinzufügen</button> 
     <ul id="list"</ul>
         
         
     
     <script> 
 
-    let shoppingItem = ['Bier','Wein','Schnapps','Milch',]
-    for (let index = 0; index < shoppingItem.length; index += 1) {
-        document.getElementById('list').innerHTML += '<li>' + shoppingItem[index] + '</li>';
-
-    }
-
+    let shoppingItem = [];
+    
     
     function fügeneuenausdruckzu(){
         let item = prompt ("Was möchstest du hinzufügen?")
-        document.getElementById("list").innerText = item;
+if (item != null) {              // != nicht gleich
+    shoppingItem.push(item);  // Nullunterdrückung bei Cancel
+    }  
+
         
     }
+    
+    
+    function updatelist(){                     
+    document.getElementById('list').innerHTML = ""; // Rücksetzng der Liste damit nicht die vorherigen Elemente wiederholt werden
 
 
+for (let index = 0; index < shoppingItem.length; index += 1) {  // Zählschleife der Länge des arrays shoppingItem plus 1
+    document.getElementById('list').innerHTML += '<li>' + shoppingItem[index] + '</li>';
 
+}
+    }
 
     </script>
 
