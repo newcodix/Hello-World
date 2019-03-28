@@ -9,6 +9,7 @@
 
 
 <body>
+<<<<<<< HEAD
     <h4>Einkaufsliste</h4>
     <button onclick="fügeneuenausdruckzu();updatelist();">Neuen Eintrag hinzufügen</button> 
     <ul id="list"</ul>
@@ -27,6 +28,19 @@ if (item != null) {              // != nicht gleich
     }  
 
         
+=======
+    <h1>Einkaufsliste</h1>
+    <button onclick="AddnewItem()">Neuen Eintrag hinzufügen</button> 
+    <ul id="list"></ul>
+    <ul id="nextlist"> </ul>
+    <script> 
+
+    function AddnewItem(){
+        let item = prompt ("Was möchstest du hinzufügen?")
+        document.getElementById("list").innerHTML = item;
+        document.getElementById("nextlist").innerHTML = item + 1;
+
+>>>>>>> f67e7a448b103a652c4033ed5bc51bc663c83724
     }
     
     
