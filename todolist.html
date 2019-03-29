@@ -20,17 +20,28 @@
             let item = prompt('Was möchtest du hinzufügen?');
 
             if (item != null) {   // Nullunterdrückung bei Cancel
-                shoppingItems.push(item);
+                shoppingItems.push(item); //zusätzliches Element hinzufügen
+            
             }
+            }
+            function removeItem(itemIndex) {
+            shoppingItems.splice(itemIndex, 1);
         }
+
+
+
+        
 
         function updateList() {
             document.getElementById('list').innerHTML = '';  // Löschung der vorigen Elemente um Doppelausgaben zu verhindern
 
             for (let index = 0; index < shoppingItems.length; index += 1) {  // index zählt 1 hoch wenn neues Element in shoppinItems dazukommt
-                document.getElementById('list').innerHTML += '<li>' + shoppingItems[index] + '</li>'; //??
+                document.getElementById('list').innerHTML += '<li>' + shoppingItems[index] + 
+                    ' <button onclick="removeItem(' + index + '); updateList();">X</button></li>';
             }
-        }
+//??
+            }
+        
     </script>
 </body>
 
